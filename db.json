@@ -1,0 +1,40 @@
+{
+    "productos": [
+      {
+        "id": 1,
+        "nombre": "Erlenmeyer",
+        "descripcion": "Erlenmeyer de laboratorio para experimentos químicos.",
+        "precio": 10.00,
+        "imagen": "./assets/erlenmeyer lab.jpg"
+      },
+      {
+        "id": 2,
+        "nombre": "Vaso de laboratorio",
+        "descripcion": "Vaso de laboratorio para experimentos químicos.",
+        "precio": 10.00,
+        "imagen": "./assets/vaso lab.jpg"
+      },
+      {
+        "id": 3,
+        "nombre": "Erlenmeyer",
+        "descripcion": "Erlenmeyer de laboratorio para experimentos químicos.",
+        "precio": 10.00,
+        "imagen": "./assets/erlenmeyer lab.jpg"
+      },
+      {
+        "id": 4,
+        "nombre": "Vaso de laboratorio",
+        "descripcion": "Vaso de laboratorio para experimentos químicos.",
+        "precio": 10.00,
+        "imagen": "./assets/vaso lab.jpg"
+      },
+      {
+        "id": 5,
+        "nombre": "Erlenmeyer",
+        "descripcion": "Erlenmeyer de laboratorio para experimentos químicos.",
+        "precio": 10.00,
+        "imagen": "./assets/erlenmeyer lab.jpg"
+      }
+    ]
+  }
+  

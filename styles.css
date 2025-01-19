@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #ffde59, #ff914d);
+    
+}
+
+header {
+    height: 100px;
+    padding: 3% 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #000000, #c89116);
+}
+
+header img {
+    max-width: 20%;
+    height: auto;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.productos, .agregar-producto {
+    width: 45%;
+}
+
+.productos h2, 
+.agregar-producto h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+    border: 1px solid ;
+    border-radius: 5px;
+ 
+}
+
+.Productos {
+    flex: 2;
+    margin-right: 20px;
+    margin-bottom: 10%;
+    text-align: center;
+    color: #000000;
+}
+
+
+.productos-contenido {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    background: linear-gradient(to right, #B2892d, #c89116);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+
+.producto img {
+    width: 30%;
+    height: 60%;
+    object-fit: cover;
+    margin-bottom: 1%;
+}
+
+.producto p {
+    margin: 1px 0;
+    line-height: 1;
+}
+
+.producto .delete {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.producto .delete:hover {
+    background-color: #ff1a1a;
+}
+
+.producto .delete:active {
+    background-color: #e60000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+}
+
+form button[type="reset"] {
+    background-color: #6c757d;
+    color: #fff;
+    margin-top: 10px;
+}
+
+footer {
+    background: linear-gradient(to right, #000000, #c89116);
+    color: white;
+    text-align: center;
+    padding: 1% ;
+    width: 100%;
+}
+
+footer img {
+    max-width: 9%;
+    height: auto;
+}
+.agregar-producto {
+    flex: 1;
+    margin-top: px;
+}
+
+.contenedor-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.agregar-producto {
+    flex: 1;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) { /* Tablets */
+    .contenedor-principal {
+        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+        align-items: center; /* Centra las secciones */
+    }
+
+    .Productos {
+        margin-right: 0; /* Elimina el margen derecho */
+        width: 100%; /* Asegura que ocupe todo el ancho */
+    }
+
+    .agregar-producto {
+        width: 100%; /* Asegura que ocupe todo el ancho */
+    }
+}
+
+@media (max-width: 480px) { /* Celulares */
+    main {
+        padding: 10px; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    .productos-contenido {
+        grid-template-columns: 1fr; /* Muestra un solo producto por fila */
+    }
+}
+
